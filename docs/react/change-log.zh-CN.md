@@ -1,17 +1,13 @@
----
-order: 2
-title: 更新日志
-toc: false
-timeline: true
----
+# Changelog
 
-#### 发布周期
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-- 修订版本号：每周末会进行日常`bug`更新。（如果有紧急的`bug`，则任何时候都可发布）
-- 次版本号：每月发布一个带有新功能的向下兼容的版本。
-- 主版本号：含有破坏性更新和新功能，不在发布周期内。
+## 1.1.0 (2020-04-24)
 
----
+
+### Features
+
+* init project ([e8b290b](https://github.com/Erindcl/dtinsight-theme/commit/e8b290bad7aafe7c8d1e89e02a17566d9a23b9a3))
 
 ## 5.0.0
 `2019-07-04`
