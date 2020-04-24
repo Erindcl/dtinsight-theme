@@ -1,6 +1,6 @@
 {
   "name": "dtinsight-theme",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "This is a document of dtinsight-theme based on Ant Design.",
   "main": "index.js",
   "private": true,
@@ -9,6 +9,7 @@
     "start": "cross-env NODE_ENV=development bisheng start",
     "prod": "bisheng build",
     "clean": "rimraf dist/*",
+    "changelog": "./scripts/changelog.sh",
     "release": "./scripts/release.sh"
   },
   "keywords": [],
