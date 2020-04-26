@@ -1,5 +1,5 @@
 ---
-order: 10
+order: 4
 title:
   zh-CN: 密码框
   en-US: Password box

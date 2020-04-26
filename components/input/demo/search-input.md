@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 1
 title:
   zh-CN: 搜索框
   en-US: Search box
@@ -33,7 +33,6 @@ ReactDOM.render(
     <Search
       placeholder="input search text"
       enterButton="Search"
-      size="large"
       onSearch={value => console.log(value)}
     />
   </div>,
