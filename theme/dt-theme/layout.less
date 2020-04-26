@@ -1,6 +1,6 @@
 @import './const.less';
 
-.ant-layout-header {
+.dtinsight-layout-header {
     background: #080A1A !important;
     padding: 0px 0px 0px 44px;
     position: absolute;
@@ -134,27 +134,7 @@
     }
 }
 
-.menu-text-ellipsis{
-    display: inline-block;
-    max-width: 80px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    vertical-align: top;
-}
-.ant-dropdown-menu-item .dropdown-content{
-    padding:6px 58px 7px 20px;
-    font-size: 14px;
-    color: #333333;
-    line-height: 27px;
-    .iconfont{
-        color: inherit;
-        margin-right: 8px;
-        vertical-align: -1px;
-    }
-}
-
-.ant-layout-sider {
+.dtinsight-layout-sider {
     background: #111426 !important;
     &.ant-layout-sider-collapsed {
         width: 60px !important;
@@ -227,6 +207,7 @@
         border-left: 3px solid transparent;
     }
 }
+
 .ant-menu-submenu-popup {
     .ant-menu {
         background: #111426;
@@ -262,12 +243,35 @@
     }
 }
 
+// 菜单内容超出隐藏
+.dtinsight-menu-text-ellipsis{
+    display: inline-block;
+    max-width: 80px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.ant-dropdown-menu-item .dropdown-content{
+    padding:6px 58px 7px 20px;
+    font-size: 14px;
+    color: #333333;
+    line-height: 27px;
+    .iconfont{
+        color: inherit;
+        margin-right: 8px;
+        vertical-align: -1px;
+    }
+}
+
 // 项目中使用
-.container {
+.dtinsight-container {
     min-width: @minWidth;
     position: absolute;
     top: 64px;
     left: 0;
+    min-height: 100px;
     right: 0;
     bottom: 0;
     background: rgb(242, 247, 250);
@@ -278,4 +282,19 @@
         height: 100%;
         background: #f2f7fa;
     }
+}
+
+// 侧边栏收缩按钮
+.dtinsight-slider-top-icon {
+    line-height: 40px;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+}
+
+// 顶部导航栏 项目选择菜单
+.dtinsight-header-project-select-menu {
+    max-height: 400px;
+    overflow: auto;
+    width: 170px;
 }

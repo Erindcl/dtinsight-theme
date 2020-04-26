@@ -10,8 +10,8 @@ module.exports = {
     htmlTemplate: path.join(__dirname, './theme/static/template.html'),
     themeConfig: {
         categoryOrder: {
-            配置: 2,
-            API文档: 100,
+            接入指南: 1,
+            Components: 2,
         },
         typeOrder: {
             基础接口: 2,
@@ -23,7 +23,7 @@ module.exports = {
     },
     baseConfig: {
         // logo: 'https://coder.slowlog.cn/images/avatar.png?v=1566195794967',
-        projectName: 'Example Docs',
-        homeUrl: '/docs/react/getting-started.html'
+        projectName: 'DTInsight-Theme',
+        homeUrl: '/docs/react/getting-started-cn'
     }
 };

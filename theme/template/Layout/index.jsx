@@ -11,7 +11,7 @@ import cnLocale from '../../zh-CN';
 import * as utils from '../utils';
 
 import '../../dt-theme/reset.less';
-// import '../../dt-theme/index.less';
+import '../../dt-theme/index.less';
 
 if (typeof window !== 'undefined' && navigator.serviceWorker) {
   navigator.serviceWorker.getRegistrations().then(registrations => {

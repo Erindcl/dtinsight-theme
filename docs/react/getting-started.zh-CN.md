@@ -1,5 +1,4 @@
 ---
-category: 接入指南
 order: 0
 title: 开发前必读
 ---
