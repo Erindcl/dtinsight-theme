@@ -283,6 +283,7 @@ export default class MainContent extends Component {
                 inlineIndent="40"
                 className="aside-container menu-site"
                 mode="inline"
+                style={{ borderRight: '0px solid #fff' }}
                 openKeys={openKeys}
                 selectedKeys={[activeMenuItem]}
                 onOpenChange={this.handleMenuOpenChange}
@@ -304,7 +305,7 @@ export default class MainContent extends Component {
                     ) : (
                         <Col xxl={4} xl={5} lg={6} md={24} sm={24} xs={24} className="main-menu">
                             <Affix>
-                                <section className="main-menu-inner">{menuChild}</section>
+                                <section style={{ height: '100vh', borderRight: '1px solid #e8e8e8' }} className="main-menu-inner">{menuChild}</section>
                             </Affix>
                         </Col>
                     )}
