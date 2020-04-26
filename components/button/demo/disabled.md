@@ -9,58 +9,16 @@ title:
 
 添加 `disabled` 属性即可让按钮处于不可用状态，同时按钮样式也会改变。
 
-## en-US
-
-To mark a button as disabled, add the `disabled` property to the `Button`.
-
 ```jsx
 import { Button } from 'antd';
 
 ReactDOM.render(
-  <div>
-    <Button type="primary">Primary</Button>
-    <Button type="primary" disabled>
-      Primary(disabled)
-    </Button>
-    <br />
-    <Button>Default</Button>
-    <Button disabled>Default(disabled)</Button>
-    <br />
-    <Button type="dashed">Dashed</Button>
-    <Button type="dashed" disabled>
-      Dashed(disabled)
-    </Button>
-    <br />
-    <Button type="link">Link</Button>
-    <Button type="link" disabled>
-      Link(disabled)
-    </Button>
-    <br />
-    <Button type="link" danger>
-      Danger Link
-    </Button>
-    <Button type="link" danger disabled>
-      Danger Link(disabled)
-    </Button>
-    <br />
-    <Button danger>Danger Default</Button>
-    <Button danger disabled>
-      Danger Default(disabled)
-    </Button>
-    <div className="site-button-ghost-wrapper">
-      <Button ghost>Ghost</Button>
-      <Button ghost disabled>
-        Ghost(disabled)
-      </Button>
-    </div>
+  <div className="demo-button-type">
+    <Button type="primary" disabled>一级按钮</Button>
+    <Button disabled>二级按钮</Button>
+    <Button ghost disabled>幽灵按钮</Button>
+    <Button type="link" disabled>文字按钮</Button>
   </div>,
   mountNode,
 );
-```
-
-```css
-.site-button-ghost-wrapper {
-  padding: 8px 8px 0 8px;
-  background: rgb(190, 200, 200);
-}
 ```

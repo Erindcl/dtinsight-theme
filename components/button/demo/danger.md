@@ -7,28 +7,16 @@ title:
 
 ## zh-CN
 
-在 4.0 之后，危险成为一种按钮属性而不是按钮类型。
-
-## en-US
-
-`danger` is a property of button after antd 4.0.
+危险按钮
 
 ```jsx
 import { Button } from 'antd';
 
 ReactDOM.render(
-  <>
-    <Button type="primary" danger>
-      Primary
-    </Button>
-    <Button danger>Default</Button>
-    <Button type="dashed" danger>
-      link
-    </Button>
-    <Button type="link" danger>
-      link
-    </Button>
-  </>,
+  <div className="demo-button-type">
+    <Button type="danger">二级按钮</Button>
+    <Button ghost type="danger">幽灵按钮</Button>
+  </div>,
   mountNode,
 );
 ```
