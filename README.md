@@ -1,17 +1,4 @@
 # Antd bisheng docs
-<br/>
-
-一个从 `Ant Design` 文档抽离出来的简化版文档工具，可用于快速构建及管理项目接口文档、个人学习笔记等。
-
-<br/>
-
-## Demo 示例
-<br/>
-
- - 请点击 [在线预览](http://api.slowlog.cn)
-
-
-<br/>
 
 ## 目录结构
 <br/>
