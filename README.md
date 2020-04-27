@@ -58,24 +58,6 @@ server {
 ```
 <br/>
 
-## 使用 Docker 构建此项目
-<br/>
-
-```bash
-
-FROM nginx:1.14.0-alpine
-
-COPY . /www/antd-bisheng-docs
-
-COPY default.conf /etc/nginx/conf.d/default.conf
-
-RUN chmod -R 0777 /www/antd-bisheng-docs
-
-CMD ["nginx", "-g", "daemon off;"]
-
-```
-<br/>
-
 ## 注意事项
 <br/>
 
@@ -84,6 +66,3 @@ CMD ["nginx", "-g", "daemon off;"]
 - 首页为空白页，需用 nginx rewrite 至指定页面
 
 - 目前仅支持中文，如需使用其他语言请自行解决
-
-- 如需访问某指定页面可通过，例如：http://api.slowlog.cn/docs/react/sign-rule.html
-
