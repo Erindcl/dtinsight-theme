@@ -5,9 +5,8 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "dev": "npm run start",
-    "start": "cross-env NODE_ENV=development bisheng start",
-    "prod": "bisheng build",
+    "dev": "cross-env NODE_ENV=development bisheng start",
+    "build": "bisheng build",
     "clean": "rimraf dist/*",
     "changelog": "./scripts/changelog.sh",
     "release": "./scripts/release.sh"

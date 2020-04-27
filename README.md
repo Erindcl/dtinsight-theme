@@ -24,13 +24,13 @@
 <br/>
 
 
-- `npm i --registry=https://registry.npm.taobao.org // 安装项目依赖`
+- `npm install // 安装项目依赖`
 
-- `npm start // 启动项目`
+- `npm run dev // 启动项目`
 
 - `npm run clean // 清除 dist 目录下的静态文件`
 
-- `npm run prod // 打包项目、静态文件生成目录为当前目录的 dist`
+- `npm run build // 打包项目、静态文件生成目录为当前目录的 dist`
 
 <br/>
 
