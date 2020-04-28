@@ -6,7 +6,9 @@ title:
 
 ## zh-CN
 
-灰色背景中的表单需添加投影
+灰色背景中的表单需添加投影，去掉外边框
+
+- 为组件添加类名`dtinsight-form-shadow-bg`
 
 ```jsx
 import { Input } from 'antd';

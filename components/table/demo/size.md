@@ -60,13 +60,13 @@ const pagination = {
 ReactDOM.render(
   <div>
     <Table
-        columns={columns}
-        dataSource={data}
-        size={'middle'}
-        style={{ border: '1px solid #dddddd' }}
-        className="dtinsight-pagination-lower"
-        pagination={pagination}
-      />
+      columns={columns}
+      dataSource={data}
+      size={'middle'}
+      style={{ border: '1px solid #dddddd' }}
+      className="dtinsight-pagination-lower"
+      pagination={pagination}
+    />
   </div>,
   mountNode,
 );
