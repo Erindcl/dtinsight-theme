@@ -1,4 +1,4 @@
-# Antd bisheng docs
+# DT Theme
 
 ## 目录结构
 <br/>
@@ -13,9 +13,8 @@
 ├── dist               // 打包后静态文件输出目录
 ├── docs               // markdown 文件
 ├── default.conf       // docker nignx 配置文件
-├── Dockerfile         // docker 构建  
 ├── package.json       // 项目依赖
-└── theme              // 基于 Ant Desgin 的主题
+└── theme              // 基于 Ant Desgin 的主题（子目录中的dt-theme为UI4.0定制样式）
 
 ```
 <br/>
@@ -29,6 +28,10 @@
 - `npm run dev // 启动项目`
 
 - `npm run clean // 清除 dist 目录下的静态文件`
+
+- `npm run release // 版本发布`
+
+- `npm run changelog // 生成changelog`
 
 - `npm run build // 打包项目、静态文件生成目录为当前目录的 dist`
 
