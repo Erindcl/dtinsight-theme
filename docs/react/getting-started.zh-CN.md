@@ -3,7 +3,7 @@ order: 0
 title: 开发前必读
 ---
 
-本项目为数栈UI4.0规范样式
+本项目为数栈 UI4.0 规范样式
 
 项目预览地址：http://172.16.8.108:8989/docs/react/getting-started-cn (内网访问)
 
