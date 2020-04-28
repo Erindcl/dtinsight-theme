@@ -1,15 +1,20 @@
 ---
-order: 0
+order: 6
 title:
-  zh-CN: 基本用法
+  zh-CN: 固定高度表
 ---
 
 ## zh-CN
 
-简单的表格，最后一列是各种操作。
+固定表格头部、尾部。中间视数据多少可滚动。可作为单屏表格数据展示使用
+
+- 为表格父元素添加类名`dtinsight-table-fixed-comm`
+- 计算当前表格以外的元素所占高度（如 300px）
+- 再为表格设置`style={{ height: 'calc(100vh - 300px)' }}`
+- 特别的，底部分页通过 footer 实现，直接使用 table 的 pagination 属性，不生效
 
 ```jsx
-import { Table, Divider } from 'antd';
+import { Table, Divider, Pagination } from 'antd';
 
 const columns = [
   {
@@ -47,18 +52,21 @@ const data = [
     name: 'John Brown',
     age: 32,
     address: 'New York No. 1 Lake Park',
+    tags: ['nice', 'developer'],
   },
   {
     key: '2',
     name: 'Jim Green',
     age: 42,
     address: 'London No. 1 Lake Park',
+    tags: ['loser'],
   },
   {
     key: '3',
     name: 'Joe Black',
     age: 32,
     address: 'Sidney No. 1 Lake Park',
+    tags: ['cool', 'teacher'],
   },
 ];
 
@@ -73,12 +81,18 @@ const pagination = {
 }
 
 ReactDOM.render(
-  <div>
+  <div className="dtinsight-table-fixed-comm">
     <Table
       columns={columns}
       dataSource={data}
-      style={{ border: '1px solid #dddddd' }}
-      pagination={pagination}
+      scroll={{ y: true }}
+      style={{ border: '1px solid #e8e8e8', height: 'calc(100vh - 300px)' }}
+      pagination={false}
+      footer={() => {
+        return <Pagination
+          {...pagination}
+        />
+      }}
     />
   </div>
   , mountNode);

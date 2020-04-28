@@ -1,63 +1,35 @@
 ---
-order: 0
+order: 5
 title:
-  zh-CN: 基本用法
+  zh-CN: 单列表格
 ---
 
 ## zh-CN
 
-简单的表格，最后一列是各种操作。
+只有一列表格数据，需给表格添加类名`dtinsight-table-one-column`。
 
 ```jsx
-import { Table, Divider } from 'antd';
+import { Table } from 'antd';
 
 const columns = [
-  {
-    title: 'Name',
-    dataIndex: 'name',
-    key: 'name',
-    render: text => <a>{text}</a>,
-  },
-  {
-    title: 'Age',
-    dataIndex: 'age',
-    key: 'age',
-  },
   {
     title: 'Address',
     dataIndex: 'address',
     key: 'address',
-  },
-  {
-    title: 'Action',
-    key: 'action',
-    render: (text, record) => (
-      <span>
-        <a>Invite</a>
-        <Divider type="vertical" />
-        <a>Delete</a>
-      </span>
-    ),
-  },
+  }
 ];
 
 const data = [
   {
     key: '1',
-    name: 'John Brown',
-    age: 32,
     address: 'New York No. 1 Lake Park',
   },
   {
     key: '2',
-    name: 'Jim Green',
-    age: 42,
     address: 'London No. 1 Lake Park',
   },
   {
     key: '3',
-    name: 'Joe Black',
-    age: 32,
     address: 'Sidney No. 1 Lake Park',
   },
 ];
@@ -77,6 +49,7 @@ ReactDOM.render(
     <Table
       columns={columns}
       dataSource={data}
+      className="dtinsight-table-one-column"
       style={{ border: '1px solid #dddddd' }}
       pagination={pagination}
     />

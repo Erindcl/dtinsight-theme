@@ -1,5 +1,5 @@
 ---
-order: 6
+order: 4
 title:
   en-US: Filter and sorter
   zh-CN: 筛选和排序
@@ -14,20 +14,6 @@ title:
 `sortDirections: ['ascend' | 'descend']`改变每列可用的排序方式，切换排序时按数组内容依次切换，设置在 table props 上时对所有列生效。
 
 使用 `defaultSortOrder` 属性，设置列的默认排序顺序。
-
-## en-US
-
-Use `filters` to generate filter menu in columns, `onFilter` to determine filtered result, and `filterMultiple` to indicate whether it's multiple or single selection.
-
-Uses `defaultFilteredValue` to make a column filtered by default.
-
-Use `sorter` to make a column sortable. `sorter` can be a function of the type `function(a, b) { ... }` for sorting data locally.
-
-`sortDirections: ['ascend' | 'descend']` defines available sort methods for each columns, effective for all columns when set on table props.
-
-Uses `defaultSortOrder` to make a column sorted by default.
-
-If a `sortOrder` or `defaultSortOrder` is specified with the value `ascend` or `descend`, you can access this value from within the function passed to the `sorter` as explained above. Such a function can take the form: `function(a, b, sortOrder) { ... }`.
 
 ```jsx
 import { Table } from 'antd';
@@ -63,8 +49,6 @@ const columns = [
     // specify the condition of filtering result
     // here is that finding the name started with `value`
     onFilter: (value, record) => record.name.indexOf(value) === 0,
-    sorter: (a, b) => a.name.length - b.name.length,
-    sortDirections: ['descend'],
   },
   {
     title: 'Age',

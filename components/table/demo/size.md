@@ -1,5 +1,5 @@
 ---
-order: 11
+order: 3
 title:
   en-US: size
   zh-CN: 紧凑型
@@ -7,11 +7,10 @@ title:
 
 ## zh-CN
 
-两种紧凑型的列表，小型列表只用于对话框内。
+紧凑型的列表，用于弹窗、侧边栏或者其他浮层里的，这种根据比例，相应改小列表高度为 44px,其他参数保持不变。
 
-## en-US
-
-There are two compacted table sizes: `middle` and `small`. The `small` size is used in Modals only.
+- 设置表格 `size="middle"`
+- 为表格添加类名 `dtinsight-pagination-lower` ，使得表格的分页行高为 44px
 
 ```jsx
 import { Table } from 'antd';
@@ -51,12 +50,23 @@ const data = [
   },
 ];
 
+const pagination = {
+  current: 1,
+  pageSize: 10,
+  size: 'small',
+  total: 30
+}
+
 ReactDOM.render(
   <div>
-    <h4>Middle size table</h4>
-    <Table columns={columns} dataSource={data} size="middle" />
-    <h4>Small size table</h4>
-    <Table columns={columns} dataSource={data} size="small" />
+    <Table
+        columns={columns}
+        dataSource={data}
+        size={'middle'}
+        style={{ border: '1px solid #dddddd' }}
+        className="dtinsight-pagination-lower"
+        pagination={pagination}
+      />
   </div>,
   mountNode,
 );
