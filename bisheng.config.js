@@ -10,13 +10,13 @@ module.exports = {
     htmlTemplate: path.join(__dirname, './theme/static/template.html'),
     themeConfig: {
         categoryOrder: {
-            接入指南: 1,
-            Components: 2,
+            开发前必读: 0,
+            颜色规范: 1,
+            字体规范: 2,
+            Components: 3,
+            更新日志: 4
         },
-        typeOrder: {
-            基础接口: 2,
-            扩展接口: 3,
-        }
+        typeOrder: {}
     },
     lessConfig: {
         javascriptEnabled: true,
