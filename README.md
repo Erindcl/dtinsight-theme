@@ -1,5 +1,9 @@
 # DT Theme
 
+本项目为数栈 UI4.0 规范样式
+
+项目预览地址：http://172.16.8.108:8989/docs/react/getting-started-cn (内网访问)
+
 ## 目录结构
 <br/>
 
