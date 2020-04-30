@@ -28,7 +28,7 @@ title: 开发前必读
 }
 ```
 
-2、 src/root.tsx 文件中导入 src/stylesheet/dt-theme 以及 reset.less
+2、 src/root.tsx 文件中导入 theme/dt-theme 中的 index.less 以及 reset.less
 
 ``` javascript
 // reset.less中已经引入了antd.less，故在项目中无需再引入antd样式文件
