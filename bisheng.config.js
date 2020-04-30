@@ -11,10 +11,11 @@ module.exports = {
     themeConfig: {
         categoryOrder: {
             开发前必读: 0,
-            颜色规范: 1,
-            字体规范: 2,
-            Components: 3,
-            更新日志: 4
+            theme项目开发指南: 1,
+            颜色规范: 2,
+            字体规范: 3,
+            Components: 4,
+            更新日志: 5
         },
         typeOrder: {}
     },
