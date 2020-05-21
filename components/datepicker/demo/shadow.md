@@ -8,7 +8,7 @@ title:
 
 灰色背景中的表单需添加投影，去掉外边框
 
-- 为组件添加类名`dtinsight-form-shadow-bg`
+- 为组件添加类名`dt-form-shadow-bg`
 
 ```jsx
 import { DatePicker } from 'antd';
@@ -19,12 +19,12 @@ const { MonthPicker, RangePicker } = DatePicker;
 const dateFormat = 'YYYY-MM-DD';
 ReactDOM.render(
   <div className="demo-datepicker-shadow demo-datepicker-box">
-    <DatePicker className="dtinsight-form-shadow-bg" defaultValue={moment('2015-06-06', dateFormat)} />
+    <DatePicker className="dt-form-shadow-bg" defaultValue={moment('2015-06-06', dateFormat)} />
     <br />
-    <MonthPicker className="dtinsight-form-shadow-bg" defaultValue={moment('2015-06', 'YYYY-MM')} />
+    <MonthPicker className="dt-form-shadow-bg" defaultValue={moment('2015-06', 'YYYY-MM')} />
     <br />
     <RangePicker
-      className="dtinsight-form-shadow-bg"
+      className="dt-form-shadow-bg"
       defaultValue={[moment('2015-06-06', dateFormat), moment('2015-06-06', dateFormat)]}
     />
   </div>,

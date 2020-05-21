@@ -85,7 +85,7 @@ ReactDOM.render(
   <Table
     columns={columns}
     dataSource={data}
-    className="dtinsight-table-border"
+    className="dt-table-border"
     pagination={pagination}
     scroll={{ x: 1300, y: 200 }}
   />,

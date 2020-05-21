@@ -8,7 +8,7 @@ title:
 
 顶部导航栏带项目选择
 
-- 添加类名 `.dtinsight-header-log-wrapper` 可设置 logo 以及标题样式
+- 添加类名 `.dt-header-log-wrapper` 可设置 logo 以及标题样式
 
 ```jsx
 import { Layout, Menu, Icon, Dropdown } from 'antd';
@@ -31,8 +31,8 @@ const menu = <Menu
 ReactDOM.render(
     <div style={{ height: 150 }}>
         <Layout style={{ position: "relative" }}>
-            <Header className="dtinsight-layout-header" style={{ width: "100%", minWidth: 100 }}>
-                <div className="logo dtinsight-header-log-wrapper" style={{ float: 'left' }}>
+            <Header className="dt-layout-header" style={{ width: "100%", minWidth: 100 }}>
+                <div className="logo dt-header-log-wrapper" style={{ float: 'left' }}>
                     {/* <img src='/logo' /> 此处添加 logo */}
                     <span className='c-header__title'>DTInsight-Theme</span>
                 </div>
@@ -58,7 +58,7 @@ ReactDOM.render(
                 </Menu>
             </Header>
             <Layout>
-                <Content style={{ minWidth: 200, width: '100%', padding: 20 }} className="dtinsight-container">
+                <Content style={{ minWidth: 200, width: '100%', padding: 20 }} className="dt-container">
                         Content
                 </Content>
             </Layout>

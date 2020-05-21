@@ -8,7 +8,7 @@ title:
 
 可选择行，进行一系列操作
 
-- 添加类名 `dtinsight-table-border` 为表格设置外边框
+- 添加类名 `dt-table-border` 为表格设置外边框
 
 ```jsx
 import { Table, Tag, Divider, Pagination, Row, Col, Button } from 'antd';
@@ -101,7 +101,7 @@ ReactDOM.render(
       rowSelection={rowSelection}
       columns={columns}
       dataSource={data}
-      className="dtinsight-table-border"
+      className="dt-table-border"
       pagination={false}
       footer={tableFooter}
     />

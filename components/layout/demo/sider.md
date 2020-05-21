@@ -8,7 +8,7 @@ title:
 
 包含可伸缩侧边导航
 
-- 添加类名 `.dtinsight-header-log-wrapper` 可设置 logo 以及标题样式
+- 添加类名 `.dt-header-log-wrapper` 可设置 logo 以及标题样式
 
 ```jsx
 import { Layout, Menu, Icon, Dropdown } from 'antd';
@@ -28,15 +28,15 @@ class SiderDemo extends React.Component {
         const { collapsed, mode } = this.state;
         const menu = <Menu
             selectedKeys={['1']}
-            className="dtinsight-header-project-select-menu"
+            className="dt-header-project-select-menu"
         >
             <Menu.Item key='1' title={'项目1'}>项目1</Menu.Item>
             <Menu.Item key='2' title={'项目2'}>项目2</Menu.Item>
         </Menu>;
         return (
             <Layout style={{ position: "relative" }}>
-                <Header className="dtinsight-layout-header" style={{ width: "100%", minWidth: 100 }}>
-                    <div className="logo dtinsight-header-log-wrapper" style={{ float: 'left' }}>
+                <Header className="dt-layout-header" style={{ width: "100%", minWidth: 100 }}>
+                    <div className="logo dt-header-log-wrapper" style={{ float: 'left' }}>
                         {/* <img src='/logo' /> 此处添加 logo */}
                         <span className='c-header__title'>DTInsight-Theme</span>
                     </div>
@@ -47,7 +47,7 @@ class SiderDemo extends React.Component {
                         <SubMenu key='sub-menu-item' title={
                             <Dropdown overlay={menu} trigger={['click']} placement="bottomCenter" >
                                 <span style={{ display: 'inline-block', height: '61px' }}>
-                                    <span className="dtinsight-menu-text-ellipsis" title={'当前项目名称'} >
+                                    <span className="dt-menu-text-ellipsis" title={'当前项目名称'} >
                                         {'当前项目名称'}
                                     </span>
                                     &nbsp;
@@ -62,8 +62,8 @@ class SiderDemo extends React.Component {
                     </Menu>
                 </Header>
                 <Layout style={{ marginTop: 64 }}>
-                    <Sider className="dtinsight-layout-sider" collapsed={collapsed}>
-                        <div className="dtinsight-slider-top-icon" onClick={this.onCollapse}>
+                    <Sider className="dt-layout-sider" collapsed={collapsed}>
+                        <div className="dt-slider-top-icon" onClick={this.onCollapse}>
                             <Icon type={collapsed ? 'menu-unfold' : 'menu-fold'} />
                         </div>
                         <Menu

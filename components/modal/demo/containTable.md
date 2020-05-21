@@ -93,7 +93,7 @@ class App extends React.Component {
             dataSource={data}
             size={'middle'}
             style={{ border: '1px solid #dddddd' }}
-            className="dtinsight-pagination-lower"
+            className="dt-pagination-lower"
             pagination={pagination}
           />
         </Modal>

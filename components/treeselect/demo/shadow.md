@@ -8,7 +8,7 @@ title:
 
 灰色背景中的表单需添加投影，去掉外边框
 
-- 为组件添加类名`dtinsight-form-shadow-bg`
+- 为组件添加类名`dt-form-shadow-bg`
 
 ```jsx
 import { TreeSelect } from 'antd';
@@ -30,7 +30,7 @@ class Demo extends React.Component {
       <div className="demo-tree-select-shadow">
           <TreeSelect
             showSearch
-            className="dtinsight-form-shadow-bg"
+            className="dt-form-shadow-bg"
             style={{ width: '100%' }}
             value={this.state.value}
             dropdownStyle={{ maxHeight: 400, overflow: 'auto' }}

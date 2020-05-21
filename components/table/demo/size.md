@@ -10,7 +10,7 @@ title:
 紧凑型的列表，用于弹窗、侧边栏或者其他浮层里的，这种根据比例，相应改小列表高度为 44px,其他参数保持不变。
 
 - 设置表格 `size="middle"`
-- 为表格添加类名 `dtinsight-pagination-lower` ，使得表格的分页行高为 44px
+- 为表格添加类名 `dt-pagination-lower` ，使得表格的分页行高为 44px
 
 ```jsx
 import { Table } from 'antd';
@@ -63,7 +63,7 @@ ReactDOM.render(
       columns={columns}
       dataSource={data}
       size={'middle'}
-      className="dtinsight-pagination-lower dtinsight-table-border"
+      className="dt-pagination-lower dt-table-border"
       pagination={pagination}
     />
   </div>,

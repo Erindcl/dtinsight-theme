@@ -15,4 +15,4 @@ title: Notification
 
 |类名  |说明  |使用示例  |
 |---------|---------|---------|
-|.dtinsight-notification-close-btn  | 通知提醒框中全部关闭按钮样式   | 全部关闭   |
+|.dt-notification-close-btn  | 通知提醒框中全部关闭按钮样式   | 全部关闭   |

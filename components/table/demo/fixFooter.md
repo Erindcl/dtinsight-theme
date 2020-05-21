@@ -8,11 +8,11 @@ title:
 
 固定表格头部、尾部。中间视数据多少可滚动。可作为单屏表格数据展示使用
 
-- 为表格父元素或者直接在表格上添加类名 `dtinsight-table-fixed-contain-footer`
+- 为表格父元素或者直接在表格上添加类名 `dt-table-fixed-contain-footer`
 - 计算当前表格以外的元素所占高度（如 300px）
 - 再为表格设置`style={{ height: 'calc(100vh - 300px)' }}`
-- 特别的，`dtinsight-table-fixed-contain-footer` 用于底部分页通过 footer 实现的表格
-- 自带分页的表格请使用类名 `dtinsight-table-fixed-base`
+- 特别的，`dt-table-fixed-contain-footer` 用于底部分页通过 footer 实现的表格
+- 自带分页的表格请使用类名 `dt-table-fixed-base`
 
 ```jsx
 import { Table, Divider, Pagination } from 'antd';
@@ -80,7 +80,7 @@ const pagination = {
 }
 
 ReactDOM.render(
-  <div className="dtinsight-table-fixed-contain-footer">
+  <div className="dt-table-fixed-contain-footer">
     <Table
       columns={columns}
       dataSource={data}

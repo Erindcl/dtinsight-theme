@@ -8,14 +8,14 @@ title:
 
 灰色背景中的表单需添加投影，去掉外边框
 
-- 为组件添加类名`dtinsight-form-shadow-bg`
+- 为组件添加类名`dt-form-shadow-bg`
 
 ```jsx
 import { Input } from 'antd';
 
 ReactDOM.render(
   <div className="demo-input-shadow">
-      <Input className="dtinsight-form-shadow-bg" placeholder="shadow input" />
+      <Input className="dt-form-shadow-bg" placeholder="shadow input" />
   </div>,
   mountNode
 );

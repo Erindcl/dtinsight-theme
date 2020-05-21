@@ -110,7 +110,7 @@ function onChange(pagination, filters, sorter, extra) {
 ReactDOM.render(
   <Table
     columns={columns}
-    className="dtinsight-table-border"
+    className="dt-table-border"
     dataSource={data}
     onChange={onChange}
   />, mountNode

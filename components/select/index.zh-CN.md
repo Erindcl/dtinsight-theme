@@ -15,4 +15,4 @@ title: Select
 
 |类名  |说明  |使用示例  |
 |---------|---------|---------|
-|.dtinsight-form-shadow-bg  | 灰色背景,表单样式设置   | 灰色背景   |
+|.dt-form-shadow-bg  | 灰色背景,表单样式设置   | 灰色背景   |
