@@ -1,12 +1,14 @@
 ---
 order: 1
 title:
-  zh-CN: 可选择
+  zh-CN: 可选择可操作
 ---
 
 ## zh-CN
 
 可选择行，进行一系列操作
+
+- 添加类名 `dtinsight-table-border` 为表格设置外边框
 
 ```jsx
 import { Table, Tag, Divider, Pagination, Row, Col, Button } from 'antd';
@@ -47,21 +49,18 @@ const data = [
     name: 'John Brown',
     age: 32,
     address: 'New York No. 1 Lake Park',
-    tags: ['nice', 'developer'],
   },
   {
     key: '2',
     name: 'Jim Green',
     age: 42,
     address: 'London No. 1 Lake Park',
-    tags: ['loser'],
   },
   {
     key: '3',
     name: 'Joe Black',
     age: 32,
     address: 'Sidney No. 1 Lake Park',
-    tags: ['cool', 'teacher'],
   },
 ];
 
@@ -72,11 +71,11 @@ const rowSelection = {
   getCheckboxProps: record => ({
     disabled: record.name === 'Disabled User', // Column configuration not to be checked
     name: record.name,
-  }),
+  })
 };
 
 tableFooter =  () => (
-  <Row>
+  <Row style={{ width: '100%' }}>
     <Col span={12}>
       <Button style={{ marginRight: 10 }} size="small" type="primary">冻结实验</Button>
       <Button size="small">解冻实验</Button>
@@ -102,7 +101,7 @@ ReactDOM.render(
       rowSelection={rowSelection}
       columns={columns}
       dataSource={data}
-      style={{ border: '1px solid #dddddd' }}
+      className="dtinsight-table-border"
       pagination={false}
       footer={tableFooter}
     />

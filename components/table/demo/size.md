@@ -63,8 +63,7 @@ ReactDOM.render(
       columns={columns}
       dataSource={data}
       size={'middle'}
-      style={{ border: '1px solid #dddddd' }}
-      className="dtinsight-pagination-lower"
+      className="dtinsight-pagination-lower dtinsight-table-border"
       pagination={pagination}
     />
   </div>,

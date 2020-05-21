@@ -1,26 +1,24 @@
 ---
-order: 2
+order: 6
 title:
-  zh-CN: 内容超出范围
+  zh-CN: 固定高度表（footer 中带分页）
 ---
 
 ## zh-CN
 
-当表格内容较多超出可视范围时，可左右、上下滚动。
+固定表格头部、尾部。中间视数据多少可滚动。可作为单屏表格数据展示使用
 
-宽度超出：
-
-- 单元格内字数太多，超过后省略 hover 显示 ( columns 中添加 `ellipsis: true` 可直接设置超出显示省略，但仅限于该列内容为简单文字，如内容为其他复杂组件，则不生效)
-- 如果列太多整体宽度超出最大宽度后固定最后一列，左边内容做滚动
-- 若左边有多选框滑动时候也做固定，只中间部分做滚动。
-
-高度超出：固定底部操作栏和表头内容区域做滚动。
+- 为表格父元素或者直接在表格上添加类名 `dtinsight-table-fixed-contain-footer`
+- 计算当前表格以外的元素所占高度（如 300px）
+- 再为表格设置`style={{ height: 'calc(100vh - 300px)' }}`
+- 特别的，`dtinsight-table-fixed-contain-footer` 用于底部分页通过 footer 实现的表格
+- 自带分页的表格请使用类名 `dtinsight-table-fixed-base`
 
 ```jsx
-import { Table, Divider } from 'antd';
+import { Table, Divider, Pagination } from 'antd';
 
 const columns = [
-  { title: 'Name', dataIndex: 'name', key: 'name', width: 200 },
+  { title: 'Name', fixed: 'left', dataIndex: 'name', key: 'name', width: 200 },
   { title: 'Age', dataIndex: 'age', key: 'age', width: 100 },
   { title: 'Address', dataIndex: 'address', key: 'address', width: 200, ellipsis: true },
   { title: 'description', dataIndex: 'description', key: 'description', width: 400 },
@@ -82,13 +80,19 @@ const pagination = {
 }
 
 ReactDOM.render(
-  <Table
-    columns={columns}
-    dataSource={data}
-    className="dtinsight-table-border"
-    pagination={pagination}
-    scroll={{ x: 1300, y: 200 }}
-  />,
-  mountNode,
-);
+  <div className="dtinsight-table-fixed-contain-footer">
+    <Table
+      columns={columns}
+      dataSource={data}
+      scroll={{ y: true, x: 1300 }}
+      style={{ height: 'calc(100vh - 300px)' }}
+      pagination={false}
+      footer={() => {
+        return <Pagination
+          {...pagination}
+        />
+      }}
+    />
+  </div>
+  , mountNode);
 ```
