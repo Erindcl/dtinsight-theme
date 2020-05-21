@@ -12,13 +12,15 @@ title: 开发前必读
 
 ## 如何在数栈应用中使用
 
-> **准备**:
+##### 0、 准备
 
-> - 本项目使用的是 antd 版本为 `3.26.13`，故在子项目使用前也需升级 antd 至相同版本 （子应用升级指南：https://dtstack.yuque.com/clg3qc/egh9u1/vszq5d ）。
+本项目使用的是 antd 版本为 `3.26.13`，故在子项目使用前也需升级 antd 至相同版本。
 
-> - 额外的，依赖的`dt-common`包也需改为升级了 antd 的版本。
+- 子应用升级指南： https://dtstack.yuque.com/clg3qc/egh9u1/vszq5d
 
-1、 package.json 中添加依赖
+额外的，依赖的`dt-common`包也需改为升级了 antd 的版本。
+
+##### 1、 package.json 中添加依赖
 
 ``` json
 {
@@ -28,13 +30,18 @@ title: 开发前必读
 }
 ```
 
-2、 src/root.tsx 文件中导入 theme/dt-theme 中的 index.less 以及 reset.less
+##### 2、 src/root.tsx 文件中导入 theme/dt-theme 中的 index.less 以及 reset.less
 
 ``` javascript
 // reset.less中已经引入了antd.less，故在项目中无需再引入antd样式文件
 import 'ant-design-dtinsight-theme/theme/dt-theme/reset.less';
 import 'ant-design-dtinsight-theme/theme/dt-theme/index.less';
 ```
+
+**特别的** ：数栈子应用中需放弃之前那一套自定义 antd 主题的方式，需修改点如下：
+
+- 去掉 css-loader 中关于 antd theme 的相关配置
+- 去掉 babel.config 中 antd 样式的按需引入配置
 
 ## 可用样式变量
 
